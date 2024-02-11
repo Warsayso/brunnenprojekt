@@ -16,6 +16,11 @@
                 <div class="header-container">
                     <div class="top-navigation">
                         <nav>
+                            <a href="#unsere-ziele">Unsere Ziele</a>
+                            <a href="#situation">Situation</a>
+                            <a href="#zeitplan">Zeitplan</a>
+                            <a href="#budget">Budget</a>
+                            <a href="#spenden-info">Spenden Infos</a>
                             <a href="https://www.gofundme.com/f/sauberes-trinkwasser-fur-warsayso-dorf?member=28928513&sharetype=teams">Spenden</a>
                             <a href="https://www.neo1.ch/artikel/busuri-adan-aus-worb-ging-fuer-ein-besseres-leben-durch-die-hoelle">Interview</a>
                         </nav>
@@ -34,7 +39,7 @@
                 <button class="donate">Spenden</button>
             </div>
         </div>  
-        <div class="main-container">
+        <div id="unsere-ziele" class="main-container">
             <main id="content">
                 <div class="teaser-content">
                     <article class="transparent-card">
@@ -53,14 +58,14 @@
                         <h2></h2>
                         <p>In meiner Kindheit lebten wir als Nomaden, wanderten von Ort zu Ort, abhängig von den natürlichen Ressourcen für das Überleben unserer Tiere und uns selbst. Doch heute, angesichts jahrelanger Dürre und der sich verschärfenden Klimakrise, ist unsere Existenz bedroht. Die trockenen Zeiten haben nicht nur zu einem dramatischen Rückgang der Tierbestände geführt, sondern auch zu einer Veränderung der Landschaft und zu schwerwiegenden Wasserknappheiten.</p>
                     </article>
-                    <article class="green-card">
+                    <article  class="green-card">
                         <picture class="portrait">
                             <source media="(-webkit-min-device-pixel-ratio: 2)" srcset="media/images/busuri.png" type="image/png">
                             <source srcset="media/images/busuri.png" type="image/png">
                             <img src="media/images/busuri.png" class="etiopiamap" alt="Etiopia map of food insecurity classification"></img>
                         </picture>
                         <h2>Busuri Adan</h2>
-                        <p>Ich lebe seit acht Jahren in der Schweiz. 2016 kam ich als 16-jähriger Flüchtling hier her. Hier konnte ich eine Lehre als Fachmann Gesundheit EFZ absolvieren, habe viele Freunde gefunden und lernte meine Freundin kennen und gründete mit ihr eine Familie.
+                        <p id="situation"  >Ich lebe seit acht Jahren in der Schweiz. 2016 kam ich als 16-jähriger Flüchtling hier her. Hier konnte ich eine Lehre als Fachmann Gesundheit EFZ absolvieren, habe viele Freunde gefunden und lernte meine Freundin kennen und gründete mit ihr eine Familie.
                     </article>
                 </div>
                 <div class="dark-bg-container">
@@ -105,7 +110,7 @@
                     <article class="main-content">
                         <div class="timeline">
                             <header>
-                                <h1>Zeitplan</h1>
+                                <h1 id="zeitplan">Zeitplan</h1>
                             </header>
                             <div class="event">
                                 <h2>Planung Brunnenprojekt</h2>
@@ -156,7 +161,7 @@
                     <article class="main-content mc-hell">
                         <div class="timeline">
                         <header>
-                            <h1>Budgetübersicht</h1>
+                            <h1 id="budget">Budgetübersicht</h1>
                         </header>
                         <section class="budget-section">
                             <h2>Ausgaben Brunnenbau</h2>
@@ -200,7 +205,7 @@
         <div class="flying-cards">
             <article class="main-content">
                 <header>
-                    <h1>Wir sind für jede Unterstützung dankbar</h1><br>
+                    <h1 id="spenden-info">Wir sind für jede Unterstützung dankbar</h1><br>
                 </header>
                 <section class="info-section">
                     <h2>Twint</h2>
@@ -232,11 +237,12 @@
 
         </footer>
         <script>   
-            history.scrollRestoration = "manual"; 
+            /*history.scrollRestoration = "manual"; 
             window.onbeforeunload = function () {
                 window.scrollTo(0,0);
-            };
-            $( document ).ready(function() {
+            };*/
+        /*$( document ).ready(function() {
+
             const speed = 0.08;
             const nspeed = 0.0304;
             const content = document.querySelector(".main-container");
@@ -271,7 +277,7 @@
                 var spe = window.pageYOffset * nspeed;
                 return 0 - spe;
             }
-        });
+        });*/
 
         </script>
     </body>
@@ -446,8 +452,8 @@ section{
     justify-content: space-evenly;
     align-items: center;
     background-color: #101b01;
-    width: 40%;
-    margin: 1em 0 1em 0;
+    width: 60%;
+    margin: 2.5em 0 2.5em 0;
 }
 
 .warysayso{
@@ -654,11 +660,10 @@ color: #fff;
 .flying-cards{
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
-    bottom: 45vw;
+    position: relative;
     justify-content: space-around;
-    left: 15vw;
     box-shadow: 5px 5px 11px 3px rgba(0,0,0,0.26);
+    margin: 2.5em 0 2.5em 0;
 }
 
 .flying-cards > article > section > h2{ 
@@ -705,10 +710,6 @@ color: #fff;
         font-size: 0.9em;
     }
 
-    .flying-cards{
-        left: 2.5vw;
-    }
-
     .flying-cards > article{
         width: 95vw;
         margin: 0;
@@ -730,13 +731,9 @@ color: #fff;
     }
 
     .dark-bg-container > article{
-        width: 55%;
+        width: 65%;
     }
 
-    .flying-cards{
-        left: 2.5vw;
-        bottom: 30vw;
-    }
 
     .flying-cards > article{
         width: 95vw;
@@ -774,10 +771,6 @@ color: #fff;
         width: 65%;
     }
 
-    .flying-cards{
-        bottom: 40vw;
-        left: 2.5vw;
-    }
 
     .flying-cards > article{
         width: 95vw;
@@ -800,10 +793,6 @@ color: #fff;
         width: 75%;
     }
 
-    .flying-cards{
-        bottom: 30vw;
-        left: 2.5vw;
-    }
 
     .flying-cards > article{
         width: 95vw;
@@ -820,9 +809,6 @@ color: #fff;
 
 @media (max-width: 500px) {
 
-    .flying-cards{
-        left: 0;
-    }
 
     .flying-cards > article{
         width: 100vw;
@@ -846,11 +832,6 @@ color: #fff;
     }
     .dark-bg-container > article{
         width: 80%;
-    }
-
-    .flying-cards{
-        bottom: 35vh;
-        left: 0;
     }
 
     .flying-cards > article{
@@ -883,9 +864,6 @@ color: #fff;
         width: 85%;
     }
 
-    .flying-cards{
-        bottom: 18vw;
-    }
 
     .flying-cards > article{
         width: 100vw;
@@ -920,10 +898,6 @@ color: #fff;
 .donate{
     top: 0;
     position: absolute;
-}
-
-.flying-cards{
-    bottom: 22vh;
 }
 
 .flying-cards > article{
